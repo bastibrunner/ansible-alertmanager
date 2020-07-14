@@ -75,7 +75,7 @@
   ignore_errors: true
   fail:
     msg: "Please use `alertmanager_version >= v0.16.0`"
-  when: alertmanager_version is version_compare('0.16.0', '<')
+  when: alertmanager_version is version('0.16.0', '<')
 
 - block:
     - name: Backward compatibility of variable [part 1]
